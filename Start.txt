@@ -11,3 +11,6 @@ django-admin startproject name
 py manage.py runserver
 
 py manage.py startapp name
+
+migration => py manage.py migrate
+py manage.py makemigrations
