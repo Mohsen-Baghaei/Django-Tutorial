@@ -1,4 +1,16 @@
 ### . ### => while we want to import sth that it's in a same folder => from . import ...
 
 
-#55
+if we want to do sth simple into our database:
+py manage.py shell
+
+then we import the models
+from posts.models import post
+
+p = Post()
+p.title = "My 1st post"
+
+p.save()
+
+Post.objects.all()
+returns what posts are in database
