@@ -14,3 +14,5 @@ p.save()
 
 Post.objects.all()
 returns what posts are in database
+
+<slug: param>
