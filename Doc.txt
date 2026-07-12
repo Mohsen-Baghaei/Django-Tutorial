@@ -1,5 +1,7 @@
 ### . ### => while we want to import sth that it's in a same folder => from . import ...
 
+pip freeze > requirements.txt
+
 
 if we want to do sth simple into our database:
 py manage.py shell
@@ -17,4 +19,3 @@ returns what posts are in database
 
 <slug: param>
 
-2:53
