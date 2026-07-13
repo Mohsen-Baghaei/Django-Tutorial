@@ -16,3 +16,16 @@ def count_till_num(num):
 
 print(count_till_num(3))
 
+def login():
+    username = input("Enter your username: ")
+    password = input("Enter your password: ")
+
+    if username != "admin":
+        return "user not found"
+    elif username == "admin" and password != "admin":
+        return "incorerrect password"
+    else: 
+        return "successful login"
+    
+print(login())
+
