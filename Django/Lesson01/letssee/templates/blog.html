@@ -1,0 +1,52 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}
+    Blog – Nexus
+{% endblock %}
+
+{% block content %}
+<section class="blog-hero">
+    <div class="container">
+        <h1>Our <span class="gradient-text">Blog</span></h1>
+        <p class="subtitle">Insights, tutorials, and stories from the Nexus team.</p>
+    </div>
+</section>
+
+<section class="blog-list">
+    <div class="container">
+        <div class="blog-grid">
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop');"></div>
+                <div class="blog-content">
+                    <span class="blog-date">May 12, 2026</span>
+                    <span class="blog-category">Development</span>
+                    <h3><a href="#">Django vs Flask: Which One to Choose?</a></h3>
+                    <p>A deep dive into the two most popular Python web frameworks.</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=400&fit=crop');"></div>
+                <div class="blog-content">
+                    <span class="blog-date">April 28, 2026</span>
+                    <span class="blog-category">Design</span>
+                    <h3><a href="#">UI Trends to Watch in 2026</a></h3>
+                    <p>From glassmorphism to micro‑interactions – what’s next?</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop');"></div>
+                <div class="blog-content">
+                    <span class="blog-date">April 5, 2026</span>
+                    <span class="blog-category">Business</span>
+                    <h3><a href="#">How to Scale Your Startup with the Right Tech</a></h3>
+                    <p>Practical advice for founders navigating growth challenges.</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+{% endblock %}

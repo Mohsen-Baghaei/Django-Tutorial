@@ -1,0 +1,59 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}
+    Home – Nexus
+{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <span class="badge">🚀 Next‑gen solutions</span>
+            <h1>Build the future <br>with <span class="gradient-text">Nexus</span></h1>
+            <p>We craft high‑performance web experiences that drive growth and innovation.</p>
+            <div class="hero-buttons">
+                <a href="{% url 'contact' %}" class="btn btn-primary">Get Started</a>
+                <a href="{% url 'portfolio' %}" class="btn btn-outline">Our Work</a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number">120+</span>
+                <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Clients</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">15</span>
+                <span class="stat-label">Awards</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <h2 class="section-title">Why choose <span class="gradient-text">Nexus</span></h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Innovation First</h3>
+                <p>We leverage cutting‑edge tech to deliver solutions that stand out.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-rocket"></i>
+                <h3>Speed & Performance</h3>
+                <p>Optimised for lightning‑fast load times and smooth interactions.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>Our team is always ready to assist you with any challenge.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

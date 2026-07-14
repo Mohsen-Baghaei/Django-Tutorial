@@ -1,0 +1,64 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}
+    Portfolio – Nexus
+{% endblock %}
+
+{% block content %}
+<section class="portfolio-hero">
+    <div class="container">
+        <h1>Our <span class="gradient-text">Work</span></h1>
+        <p class="subtitle">Selected projects that showcase our expertise and creativity.</p>
+    </div>
+</section>
+
+<section class="portfolio-grid-section">
+    <div class="container">
+        <div class="portfolio-grid">
+            <div class="portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop');">
+                <div class="portfolio-overlay">
+                    <h3>FinTech Dashboard</h3>
+                    <span class="tag">Web App</span>
+                    <a href="#" class="btn btn-small">View Project</a>
+                </div>
+            </div>
+            <div class="portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop');">
+                <div class="portfolio-overlay">
+                    <h3>E‑Commerce Platform</h3>
+                    <span class="tag">Full‑Stack</span>
+                    <a href="#" class="btn btn-small">View Project</a>
+                </div>
+            </div>
+            <div class="portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=400&fit=crop');">
+                <div class="portfolio-overlay">
+                    <h3>Portfolio Builder</h3>
+                    <span class="tag">SaaS</span>
+                    <a href="#" class="btn btn-small">View Project</a>
+                </div>
+            </div>
+            <div class="portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=600&h=400&fit=crop');">
+                <div class="portfolio-overlay">
+                    <h3>Mobile Fitness App</h3>
+                    <span class="tag">Mobile</span>
+                    <a href="#" class="btn btn-small">View Project</a>
+                </div>
+            </div>
+            <div class="portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?w=600&h=400&fit=crop');">
+                <div class="portfolio-overlay">
+                    <h3>AI Chat Interface</h3>
+                    <span class="tag">AI/ML</span>
+                    <a href="#" class="btn btn-small">View Project</a>
+                </div>
+            </div>
+            <div class="portfolio-item" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop');">
+                <div class="portfolio-overlay">
+                    <h3>IoT Monitoring</h3>
+                    <span class="tag">IoT</span>
+                    <a href="#" class="btn btn-small">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

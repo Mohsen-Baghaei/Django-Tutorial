@@ -1,0 +1,81 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}
+    About – Nexus
+{% endblock %}
+
+{% block content %}
+<section class="about-hero">
+    <div class="container">
+        <h1>About <span class="gradient-text">Nexus</span></h1>
+        <p class="subtitle">We are a passionate team of designers and developers committed to excellence.</p>
+    </div>
+</section>
+
+<section class="team">
+    <div class="container">
+        <h2 class="section-title">Meet the <span class="gradient-text">Team</span></h2>
+        <div class="team-grid">
+            <div class="team-card">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop&crop=face" alt="Alex Rivera">
+                <h3>Alex Rivera</h3>
+                <span>CEO & Founder</span>
+                <p>Visionary leader with 15+ years in digital transformation.</p>
+                <div class="team-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="team-card">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop&crop=face" alt="Jamie Chen">
+                <h3>Jamie Chen</h3>
+                <span>Lead Developer</span>
+                <p>Full‑stack architect who turns complex problems into elegant code.</p>
+                <div class="team-social">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="team-card">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop&crop=face" alt="Taylor Smith">
+                <h3>Taylor Smith</h3>
+                <span>Creative Director</span>
+                <p>Design thinker who crafts memorable brand experiences.</p>
+                <div class="team-social">
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="values">
+    <div class="container">
+        <h2 class="section-title">Our <span class="gradient-text">Values</span></h2>
+        <div class="values-grid">
+            <div class="value-item">
+                <i class="fas fa-handshake"></i>
+                <h4>Integrity</h4>
+                <p>We act with honesty and transparency in every interaction.</p>
+            </div>
+            <div class="value-item">
+                <i class="fas fa-brain"></i>
+                <h4>Creativity</h4>
+                <p>We push boundaries and embrace bold, original ideas.</p>
+            </div>
+            <div class="value-item">
+                <i class="fas fa-users"></i>
+                <h4>Collaboration</h4>
+                <p>Great results come from teamwork and shared success.</p>
+            </div>
+            <div class="value-item">
+                <i class="fas fa-medal"></i>
+                <h4>Excellence</h4>
+                <p>We never settle for “good enough” – we strive for the best.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
