@@ -17,11 +17,21 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
+from . import views
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("", views.homepage),
+    path("about/", views.about, name="about"),
+    path("blog-home/", views.blog_home, name="blog-home"),
+    path("blog-single/", views.blog_single, name="blog-single"),
+    path("contact/", views.contact, name="contact"),
+    path("elements/", views.elements, name="elements"),
+    path("hotels/", views.hotels, name="hotels"),
+    path("insurance/", views.insurance, name="insurance"),
+    path("packages/", views.packages, name="packages"),
 ]
 
-urlpatterns += static(settings.STATIC_URL, document_root = settings.MEDIA_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
