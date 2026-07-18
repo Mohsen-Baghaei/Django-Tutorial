@@ -1716,7 +1716,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .primary-checkbox input:checked + label {
-  background: url(../../media/elements/primary-check.png) no-repeat center center/cover;
+  background: url(../img/elements/primary-check.png) no-repeat center center/cover;
   border: none;
 }
 
@@ -1754,7 +1754,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .confirm-checkbox input:checked + label {
-  background: url(../../media/elements/success-check.png) no-repeat center center/cover;
+  background: url(../img/elements/success-check.png) no-repeat center center/cover;
   border: none;
 }
 
@@ -1797,7 +1797,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .disabled-checkbox input:checked + label {
-  background: url(../../media/elements/disabled-check.png) no-repeat center center/cover;
+  background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
   border: none;
 }
 
@@ -1835,7 +1835,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .primary-radio input:checked + label {
-  background: url(../../media/elements/primary-radio.png) no-repeat center center/cover;
+  background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
   border: none;
 }
 
@@ -1873,7 +1873,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .confirm-radio input:checked + label {
-  background: url(../../media/elements/success-radio.png) no-repeat center center/cover;
+  background: url(../img/elements/success-radio.png) no-repeat center center/cover;
   border: none;
 }
 
@@ -1916,7 +1916,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .disabled-radio input:checked + label {
-  background: url(../../media/elements/disabled-radio.png) no-repeat center center/cover;
+  background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;
   border: none;
 }
 
@@ -2483,7 +2483,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*-------- Start Banner Area ------------*/
 .banner-area {
-  background: url(../../media/hero-bg.jpg) center;
+  background: url(../img/hero-bg.jpg) center;
   background-size: cover;
 }
 
@@ -2688,7 +2688,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*-------- end Popular-destination Area ------------*/
 /*-------- start price Area ------------*/
 .price-area {
-  background: url(../../media/price-bg.png);
+  background: url(../img/price-bg.png);
   background-size: cover;
 }
 
@@ -3006,7 +3006,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .about-banner {
-  background: url(../../media/top-banner.jpg) center;
+  background: url(../img/top-banner.jpg) center;
   background-size: cover;
 }
 
@@ -3244,7 +3244,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .list-wrap ul {
-  list-style-image: url("../../media/insurence/bullet.png");
+  list-style-image: url("../img/insurence/bullet.png");
 }
 
 .list-wrap li {
@@ -3266,7 +3266,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* =================================== */
 /*============ Start Blog Home Styles  =============*/
 .blog-home-banner {
-  background: url(../../media/blog/blog-home-banner.jpg) bottom;
+  background: url(../img/blog/blog-home-banner.jpg) bottom;
   background-size: cover;
   padding: 130px 0px;
 }
