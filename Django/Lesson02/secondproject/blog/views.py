@@ -7,6 +7,6 @@ def blog_home(request):
     return render(request, "blog/blog-home.html", {"posts": posts})
 
 def blog_single(request, pid):
-    # post = Post.objects.get(id = pid)
-    post = get_list_or_404(Post, pk=pid)
+    post = Post.objects.get(id = pid, status = 1)
+    # post = get_list_or_404(Post, pk=pid)
     return render(request, "blog/blog-single.html", {"post": post})
