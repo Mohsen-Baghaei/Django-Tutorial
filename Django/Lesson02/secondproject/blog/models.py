@@ -6,7 +6,7 @@ class Post(models.Model):
     # author
     title = models.CharField(max_length=250)
     content = models.TextField()
-    # tag
+    # tags
     # category
     counted_views = models.IntegerField(default=0)
     status = models.BooleanField(default=False)
@@ -19,3 +19,4 @@ class Post(models.Model):
 
     def __str__(self) -> str:
         return self.title
+    
