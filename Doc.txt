@@ -24,3 +24,7 @@ we could change the view of admin panel items by The Django admin site (search i
 also we could change the theme of the admin panel 
 
 date modification in htmls = https://docs.djangoproject.com/en/3.2/ref/templates/builtins/#date
+
+template tags => we can do sth like add or show properties in html file :
+simple tag
+filter tag
