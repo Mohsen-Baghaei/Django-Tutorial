@@ -24,5 +24,9 @@ def popularposts():
 
 @register.inclusion_tag("blog/post-categories.html")
 def post_categories():
+    posts = Post.objects.filter(status=1)
     categories = Category.objects.all()
-    return {"category": categories}
+    cat_dict = {}
+    for name in categories:
+        cat_dict[name] = posts.filter(category=name).count()
+    return {"category": cat_dict}

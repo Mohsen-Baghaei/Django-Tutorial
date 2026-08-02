@@ -15,3 +15,8 @@ def blog_single(request, pid):
     privious_post = Post.objects.filter(id__lt=pid, status=1).order_by("id").first()
     context = {"post": post, "next_post": next_post, "privious_post": privious_post}
     return render(request, "blog/blog-single.html", context)
+
+def blog_category(request, cat_name):
+    posts = Post.objects.filter(status=1)
+    context = {"posts": posts}
+    return render(request, "blog/blog-home.html", )
