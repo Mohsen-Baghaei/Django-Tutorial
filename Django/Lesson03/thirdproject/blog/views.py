@@ -5,8 +5,10 @@ from .models import Post
 def test(request):
     return render(request, "blog/test.html")
 
-def blog_home(request):
+def blog_home(request, cat_name=None):
     posts = Post.objects.all().filter(status=1)
+    if cat_name:
+        posts = posts.filter(category__name=cat_name)
     return render(request, "blog/blog-home.html", {"posts": posts})
 
 def blog_single(request, pid):
@@ -15,8 +17,3 @@ def blog_single(request, pid):
     privious_post = Post.objects.filter(id__lt=pid, status=1).order_by("id").first()
     context = {"post": post, "next_post": next_post, "privious_post": privious_post}
     return render(request, "blog/blog-single.html", context)
-
-def blog_category(request, cat_name):
-    posts = Post.objects.filter(status=1)
-    context = {"posts": posts}
-    return render(request, "blog/blog-home.html", )
