@@ -5,10 +5,12 @@ from .models import Post
 def test(request):
     return render(request, "blog/test.html")
 
-def blog_home(request, cat_name=None):
+def blog_home(request, **kwargs):
     posts = Post.objects.all().filter(status=1)
-    if cat_name:
-        posts = posts.filter(category__name=cat_name)
+    if kwargs.get("cat_name") != None:
+        posts = posts.filter(category__name=kwargs["cat_name"])
+    if kwargs.get("author_username") != None:
+        posts = posts.filter(author__username = kwargs["author_username"])
     return render(request, "blog/blog-home.html", {"posts": posts})
 
 def blog_single(request, pid):
