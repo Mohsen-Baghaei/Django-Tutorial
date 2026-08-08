@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from .models import Post
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
+
 
 # Create your views here.
 def test(request):
@@ -11,6 +13,15 @@ def blog_home(request, **kwargs):
         posts = posts.filter(category__name=kwargs["cat_name"])
     if kwargs.get("author_username") != None:
         posts = posts.filter(author__username = kwargs["author_username"])
+
+    posts = Paginator(posts, 3)
+    try:
+        page_number = request.GET.get("page")
+        posts = posts.get_page(page_number)
+    except PageNotAnInteger:
+        posts = posts.get_page(1)
+    except EmptyPage:
+        posts = posts.get_page(1)
     return render(request, "blog/blog-home.html", {"posts": posts})
 
 def blog_single(request, pid):
