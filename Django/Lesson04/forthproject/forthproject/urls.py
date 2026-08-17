@@ -26,8 +26,8 @@ urlpatterns = [
     path("", views.homepage),
     path("about/", views.about, name="about"),
     path("elements/", views.elements, name="elements"),
-    path("blog/", include("blog.urls")),
-    path("website/", include("website.urls"))
+    path("website/", include("website.urls")),
+    path("blog/", include("blog.urls"))
 ]
 
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

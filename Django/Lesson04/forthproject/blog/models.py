@@ -8,10 +8,9 @@ class Category(models.Model):
 
     def __str__(self) -> str:
         return self.name
-
 class Post(models.Model):
     image = models.ImageField(default="fallback.png", blank=True, upload_to="blog/")
-    authur = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
+    author = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     title = models.CharField(max_length=250)
     content = models.TextField()
     # tags
@@ -20,7 +19,7 @@ class Post(models.Model):
     status = models.BooleanField(default=False)
     published_date = models.DateTimeField(null=True)
     created_at = models.DateTimeField(auto_now_add=True)
-    published_at = models.DateTimeField(auto_now=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
         ordering = ["-created_at"]
