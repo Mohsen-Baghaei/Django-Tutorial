@@ -10,7 +10,7 @@ class Category(models.Model):
         return self.name
 class Post(models.Model):
     image = models.ImageField(default="fallback.png", blank=True, upload_to="blog/")
-    author = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
+    author = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, related_name="publisher")
     title = models.CharField(max_length=250)
     content = models.TextField()
     # tags
